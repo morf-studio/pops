@@ -1,0 +1,11 @@
+# Site settings
+title: Pops Life
+email: info@pops.life
+title: Pops Life
+description: > # this means to ignore newlines until "baseurl:"
+  POPS is an exploration of fatherhood as experienced by African-American men.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
