@@ -2,7 +2,39 @@ button{
   background-color:none;
   border:none;
   font-weight:600;
-  font-size:$h5;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:$h6;
+  padding:.5em 2em;
+  background-color:$blue-lt;
+  -webkit-font-smoothing:antialiased;
+  color:$black70;
+  &:hover{
+    color:$black;
+  }
+  &:active{
+    outline:none;
+    background-color:$blue;
+  }
+  &:focus{
+    outline:none;
+  }
+}
+.button-dark{
+  background-color:$black80;
+  color:$white;
+  &:hover{
+    color:$white;
+  }
+  &:active{
+    background-color:$black;
+  }
+}
+.button-alt{
+  background-color:$gold-lt;
+  &:active{
+    background-color:$gold;
+  }
 }
 
 .btn-circle{

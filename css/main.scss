@@ -30,12 +30,20 @@ visibility: visible;
   // );
 }
 body{
-  background-image: linear-gradient(to bottom,rgba(0,0,0,.1) 0,rgba(255,255,255,0)1px);
-  background-repeat: repeat-y;;
+  //background-image: linear-gradient(to bottom,rgba(0,0,0,.1) 0,rgba(255,255,255,0)1px);
+  //background-repeat: repeat-y;;
   background-size:100% $base-line-height;
   background-color:$white;
   color: $black70;
 }
+.logo{
+  h2{
+    @include breakpoint(l) {
+      line-height:1;
+    };
+  }
+}
+
 
 
 span.kern{
@@ -53,7 +61,7 @@ span.kern{
     margin-right:1em;
   }
   &:hover{
-    color:$blue;
+    //color:$blue;
   }
 
 }
