@@ -1,8 +1,7 @@
 a {
-  color:$black;
+  color:$black80;
   transition: all .2s;
   text-decoration:none;
-  //box-shadow: 0 2px 0 0;
 }
 
 p{
@@ -12,14 +11,13 @@ p{
 }
 a:link,
 a:visited{
-    color:$black;
+    color:$black80;
 }
 a.white{
  color:$white;
 }
-//.link { text-decoration: none; }
+.link { text-decoration: none; }
 a:hover {
-  //color:$blue;
   box-shadow:0 4px 0 0;
 }
 a.current{
@@ -28,38 +26,10 @@ a.current{
 a:active{
   transition: all .3s;
 }
-a.button{
-  transition: all .25s;
-  text-decoration:none;
-  padding:$space-s $space-m;
-  border-style: solid;
-  border-width: $border-width;
-  padding:$space-s $space-m;
-  &:hover{
-    box-shadow: 0 0 0 4px;
-  }
-  &:active{
-    background-color:$black10;
-  }
-}
-a.button-white{
-  transition: all .25s;
-  text-decoration:none;
-  color: white;
-  padding:$space-s $space-m;
-  border-style: solid;
-  border-width: $border-width;
-  padding:$space-s $space-m;
-  &:hover{
-    box-shadow: 0 0 0 4px ;
-  }
-  &:active{
-    background-color:$black10;
-  }
-}
+
+
 a.permalink{
   &:hover{
-    border:none;
     box-shadow:none;
   }
 }

@@ -1,20 +1,25 @@
-button{
+button, .button{
   background-color:none;
   border:none;
   font-weight:600;
   text-transform:uppercase;
   letter-spacing:.1em;
   font-size:$h6;
-  padding:.5em 2em;
+  padding:.75em 2em;
   background-color:$blue-lt;
   -webkit-font-smoothing:antialiased;
   color:$black70;
+  border-radius:.25em;
+  margin:1em 1em 0 0;
+  transition: all .2s;
   &:hover{
     color:$black;
+    box-shadow:0 2px 4px 0 $black10;
   }
   &:active{
     outline:none;
     background-color:$blue;
+    box-shadow:0 0px 2px 0 $black20;
   }
   &:focus{
     outline:none;

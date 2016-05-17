@@ -29,3 +29,37 @@ h3 {
     font-size: 1.5rem;
   };
 }
+h4 {
+  font-size: $h4;
+  font-weight:600;
+  @include breakpoint(l) {
+    font-size: 1.25rem;
+  };
+}
+
+.section-heading{
+  text-transform:uppercase;
+  font-family:$condensed-font-family;
+  font-size:20vw;
+  display:block;
+  //transform:rotateZ(90deg);
+  //transform-origin:left;
+  //margin-left:.5em;
+  margin-bottom:-.35em;
+  z-index:-1;
+  //position:absolute;
+}
+
+.section-heading-gold{
+
+  color:$gold;
+  //text-shadow:1px 1px white, .03em .03em $gold;
+
+}
+.section-heading-blue{
+  text-transform:uppercase;
+  font-family:$condensed-font-family;
+  font-size:8em;
+  color:$black80;
+  text-shadow:1px 1px white, .03em .03em $blue;
+}

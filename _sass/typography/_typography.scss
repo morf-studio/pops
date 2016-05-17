@@ -13,10 +13,9 @@ $heading-font-family: 'canada-type-gibson', -apple-system, BlinkMacSystemFont,
   "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
 $condensed-font-family:'refrigerator-deluxe', "Roboto Condensed", "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-.condensed{
+.condensed, .page-header{
   font-family:$condensed-font-family;
   font-weight:bold;
-
 }
 .tall{
   font-size:2em;
@@ -134,15 +133,17 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure, small,
+ul, ol, dl, small,
 %vertical-rhythm {
     margin-top:0;
     margin-bottom: $space-after/2;
 }
 
-
+p.intro{
+  font-size:1.25em;
+}
 p {
-  font-family:$serif-font-family;
+  //font-family:$serif-font-family;
   max-width:$measure-width;
   //opacity:0.9;
 }
@@ -155,16 +156,41 @@ small{
 }
 
 blockquote{
-  font-size:1.5rem;
-  border-left:.25rem solid $blue;
-  color:$black50;
-  padding:$space-m;
+  font-family:$condensed-font-family;
+  font-size:2rem;
+  //border-left:.25rem solid $blue;
+  //border-left:.5em solid $gold-lt;
+  //color:$black50;
+  //padding:$space-m;
+  line-height: 1;
+  position:relative;
+  margin-left:1.5em;
+  margin-top:$space-xl;
+  margin-bottom:$space-xl;
+  &:before{
+    content:"“";
+    display:block;
+    position:absolute;
+    left:-4rem;
+    top:-5rem;
+    font-size:10em;
+    color:$gold-lt;
+    font-weight:normal;
+    z-index:1;
+    //opacity:.5;
+
+  }
   p{
-    font-family:$base-font-family;
+    font-family:$condensed-font-family;
+    position:relative;
+    z-index:2;
+    font-weight:bold;
   }
   .author{
-    font-size:$h5;
-
+    font-size:$h4;
+    text-transform:uppercase;
+    font-weight:bold;
+color:$gold;
   }
 }
 p.meta{

@@ -1,3 +1,15 @@
+// Media Object
+$mediaspace: .5em;
+.media {
+  margin:$mediaspace;
+}
+.media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+.media .img {float:left; margin-right: $mediaspace;}
+.media .img img{display:block;}
+.media .imgExt{float:right; margin-left: $mediaspace;}
+
+
+
 /**
  * Images
  */
@@ -17,6 +29,10 @@ figure > img {
 
 figcaption {
     font-size: $small-font-size;
+    p{
+      margin-top:.75rem;
+      opacity:.9;
+    }
 }
 // CSS Tricks Fluid-Width-Video, Using .ratio-x-y Classes to Calculate proportion
 .videoWrapper {
