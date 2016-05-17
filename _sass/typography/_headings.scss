@@ -46,7 +46,9 @@ h4 {
   //transform-origin:left;
   //margin-left:.5em;
   margin-bottom:-.35em;
-  z-index:-1;
+  mix-blend-mode:multiply;
+  -webkit-mix-blend-mode:multiply;
+  //z-index:-1;
   //position:absolute;
 }
 
