@@ -42,10 +42,11 @@ h4 {
   font-family:$condensed-font-family;
   font-size:20vw;
   display:block;
+  text-align:center;
   //transform:rotateZ(90deg);
   //transform-origin:left;
   //margin-left:.5em;
-  margin-bottom:-.35em;
+  //margin-bottom:-.35em;
   mix-blend-mode:multiply;
   -webkit-mix-blend-mode:multiply;
   //z-index:-1;
